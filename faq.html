@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Are You Dead Yet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        .back-link {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 16px;
+        }
+        .faq-category {
+            margin-bottom: 40px;
+        }
+        .faq-category h2 {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #222;
+        }
+        .faq-item {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+        .faq-item h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            color: #999;
+            font-size: 14px;
+            margin: 0;
+        }
+        .contact-section {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.05));
+            border: 1px solid rgba(76, 175, 80, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact-section h2 {
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .contact-section p {
+            color: #888;
+            margin-bottom: 16px;
+        }
+        .contact-section a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">&larr; Back to Support</a>
+            <h1>Frequently Asked Questions</h1>
+            <p class="subtitle">Find answers to common questions about Are You Dead Yet</p>
+        </header>
+
+        <div class="faq-category">
+            <h2>Getting Started</h2>
+
+            <div class="faq-item">
+                <h3>What is a dead man's switch?</h3>
+                <p>A dead man's switch is a safety mechanism that requires regular check-ins. If you fail to check in within a specified time period, the system automatically takes action - in this case, notifying your emergency contacts via email.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I set up the app?</h3>
+                <p>1) Add at least one emergency contact with their email address. 2) Write the message you want them to receive. 3) Set your name in Settings. 4) Choose your check-in interval. 5) Arm the switch using the toggle on the home screen.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How many contacts can I add?</h3>
+                <p>You can add up to 3 emergency contacts. All contacts will receive the same message simultaneously if you miss a check-in.</p>
+            </div>
+        </div>
+
+        <div class="faq-category">
+            <h2>Check-ins & Notifications</h2>
+
+            <div class="faq-item">
+                <h3>What happens if I miss a check-in?</h3>
+                <p>If you don't check in before your timer expires, the app will automatically send your pre-written message to all your emergency contacts via email. This happens even if your phone is off or the app is closed.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will I get reminded to check in?</h3>
+                <p>Yes! The app sends push notifications to remind you when your check-in deadline is approaching. Make sure notifications are enabled for the app in your device settings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I change my check-in interval?</h3>
+                <p>Yes. Go to Settings and adjust the interval anywhere from 1 hour to 30 days. Choose an interval that makes sense for your situation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I accidentally miss a check-in?</h3>
+                <p>Unfortunately, once the timer expires and emails are sent, they cannot be unsent. We recommend setting a comfortable interval and enabling notifications to avoid accidental triggers.</p>
+            </div>
+        </div>
+
+        <div class="faq-category">
+            <h2>Privacy & Security</h2>
+
+            <div class="faq-item">
+                <h3>Is my data secure?</h3>
+                <p>Yes. Your configuration (contacts, message, settings) is stored securely on your device using encrypted storage (Expo SecureStore). Your data is synced with our server only for the purpose of sending notifications when you miss a check-in.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can anyone else see my message or contacts?</h3>
+                <p>No one can see your data except you and your designated contacts (when a notification is triggered). We do not sell or share your data with third parties.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete my data?</h3>
+                <p>You can delete all your data by uninstalling the app. To request deletion of any server-side data, contact us at areyoudeadyetapp@gmail.com.</p>
+            </div>
+        </div>
+
+        <div class="faq-category">
+            <h2>Troubleshooting</h2>
+
+            <div class="faq-item">
+                <h3>The app isn't sending me reminders</h3>
+                <p>Make sure push notifications are enabled for the app in your device's Settings. Also ensure the switch is armed (shows "ARMED" status on home screen).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>My contacts didn't receive an email</h3>
+                <p>Check that you've entered valid email addresses for your contacts. Also ask your contacts to check their spam/junk folders. If issues persist, contact support.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>I can't arm the switch</h3>
+                <p>To arm the switch, you need to: 1) Add at least one contact, 2) Set your message, and 3) Enter your name in Settings. The home screen will show what's missing.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Still have questions?</h2>
+            <p>We're happy to help with any questions not covered here.</p>
+            <a href="mailto:areyoudeadyetapp@gmail.com">Contact Support &rarr;</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Are You Dead Yet. <a href="index.html">Back to Support</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
